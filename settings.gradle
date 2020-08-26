@@ -1,0 +1,3 @@
+rootProject.name='ToastLib'
+include ':app'
+include ':mycpetoastlib'
