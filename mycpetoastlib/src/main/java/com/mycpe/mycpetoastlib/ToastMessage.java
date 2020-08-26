@@ -11,4 +11,10 @@ public class ToastMessage {
 
     }
 
+    public static void longToast(Context context, String message) {
+
+        Toast.makeText(context, ""+message, Toast.LENGTH_LONG).show();
+
+    }
+
 }
