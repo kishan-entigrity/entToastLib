@@ -75,18 +75,19 @@ public class CircularImageView extends androidx.appcompat.widget.AppCompatImageV
 
     public CircularImageView(Context context) {
         super(context);
-        
+
         init();
     }
 
-    public CircularImageView(Context context, @Nullable AttributeSet attrs) {
+    public CircularImageView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CircularImageView(Context context, @Nullable AttributeSet attrs, int defStyle) {
+    public CircularImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView, defStyle, 0);
+
         mBorderWidth = a.getDimensionPixelSize(R.styleable.CircleImageView_civ_border_width, DEFAULT_BORDER_WIDTH);
         mBorderColor = a.getColor(R.styleable.CircleImageView_civ_border_color, DEFAULT_BORDER_COLOR);
         mBorderOverlay = a.getBoolean(R.styleable.CircleImageView_civ_border_overlay, DEFAULT_BORDER_OVERLAY);
@@ -102,7 +103,6 @@ public class CircularImageView extends androidx.appcompat.widget.AppCompatImageV
     }*/
 
     private void init() {
-
         mInitialized = true;
 
         super.setScaleType(SCALE_TYPE);
@@ -125,7 +125,6 @@ public class CircularImageView extends androidx.appcompat.widget.AppCompatImageV
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             setOutlineProvider(new OutlineProvider());
         }
-
     }
 
     @Override
@@ -499,4 +498,5 @@ public class CircularImageView extends androidx.appcompat.widget.AppCompatImageV
         }
 
     }
+
 }
