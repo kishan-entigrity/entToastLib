@@ -1,6 +1,6 @@
 # entToastLib
 
-Hell world this is my first ever android lib for the Toast messages with two methods for short and long toast message:
+Hello world this is my first ever android lib for the Toast messages with two methods for short and long toast message:
 
 Add it to your root build.gradle at the end of repositories:
 
